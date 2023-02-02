@@ -1,0 +1,17 @@
+version: '3.3'
+services:
+    linuxserver:
+        container_name: sonarr
+        environment:
+            - PUID=1000
+            - PGID=1000
+            - TZ=Australia/Melbourne
+        ports:
+            - '8989:8989'
+        volumes:
+            - '/mnt/containerstore/sonarr/config:/config'
+            - '/mnt/public/tv:/tv'
+            - '/mnt/public/torrents:/downloads'
+            #- '/mnt/jdstorage5/torrents:/downloads'
+        restart: unless-stopped
+        image: 'lscr.io/linuxserver/sonarr:latest'

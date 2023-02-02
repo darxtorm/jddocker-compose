@@ -12,7 +12,7 @@ services:
             - '51413:51413'
             - '51413:51413/udp'
         volumes:
-            - '/mnt/containerstore/transmission/config:/config'
+            - '/mnt/containerconfig/transmission/config:/config'
             - '/mnt/public/torrents:/downloads'
             #- '/mnt/jdstorage5/torrents:/downloads'
             - '/mnt/public/torrents/autoget:/watch'

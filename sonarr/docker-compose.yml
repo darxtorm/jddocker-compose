@@ -9,7 +9,7 @@ services:
         ports:
             - '8989:8989'
         volumes:
-            - '/mnt/containerstore/sonarr/config:/config'
+            - '/mnt/containerconfig/sonarr/config:/config'
             - '/mnt/public/tv:/tv'
             - '/mnt/public/torrents:/downloads'
             #- '/mnt/jdstorage5/torrents:/downloads'

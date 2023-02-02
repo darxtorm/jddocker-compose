@@ -1,0 +1,17 @@
+version: '3.3'
+services:
+    linuxserver:
+        container_name: bazarr
+        environment:
+            - PUID=1000
+            - PGID=1000
+            - TZ=Australia/Melbourne
+        ports:
+            - '6767:6767'
+        volumes:
+            - '/mnt/containerstore/bazarr/config:/config'
+            - '/mnt/public/movies:/movies'
+            - '/mnt/public/movies_spicy:/movies_spicy'
+            - '/mnt/public/tv:/tv'
+        restart: unless-stopped
+        image: 'lscr.io/linuxserver/bazarr:latest'

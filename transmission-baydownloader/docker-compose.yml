@@ -14,7 +14,7 @@ services:
       - /mnt/containerconfig/baydownloader/config:/config
       - /mnt/torrents/baydownloads:/downloads
       - /mnt/torrents/baydownloads/autoget:/watch
-      - /mnt/usb-ext2tb:/usb-ext2tb
+      - /mnt/local-lvm-slow:/local-lvm-slow
     ports:
       - 9091:9091
       - 51412:51412

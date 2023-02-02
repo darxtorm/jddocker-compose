@@ -9,7 +9,7 @@ services:
         ports:
             - '7878:7878'
         volumes:
-            - '/mnt/containerstore/radarr/config:/config'
+            - '/mnt/containerconfig/radarr/config:/config'
             - '/mnt/public/movies:/movies'
             - '/mnt/public/movies_spicy:/movies_spicy'
             - '/mnt/public/torrents:/downloads'

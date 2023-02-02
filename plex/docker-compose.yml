@@ -24,6 +24,6 @@ services:
     #  - SYS_ADMIN
  
     volumes:
-      - "/mnt/containerstore/plex/config:/config"
-      - "/mnt/containerstore/plex/transcode:/transcode"
+      - "/mnt/containerconfig/plex/config:/config"
+      - "/mnt/containerconfig/plex/transcode:/transcode"
       - "/mnt/public:/data"

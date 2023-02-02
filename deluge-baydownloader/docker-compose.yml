@@ -12,7 +12,7 @@ services:
     volumes:
       - /mnt/containerconfig/deluge/config:/config
       - /mnt/torrents/baydownloads:/downloads
-      - /mnt/usb-ext2tb:/local-lvm-slow      
+      - /mnt/local-lvm-slow:/local-lvm-slow      
     ports:
       - 8112:8112
       #- 6881:6881

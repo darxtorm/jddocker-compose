@@ -9,7 +9,7 @@ services:
         ports:
             - '6767:6767'
         volumes:
-            - '/mnt/containerstore/bazarr/config:/config'
+            - '/mnt/containerconfig/bazarr/config:/config'
             - '/mnt/public/movies:/movies'
             - '/mnt/public/movies_spicy:/movies_spicy'
             - '/mnt/public/tv:/tv'

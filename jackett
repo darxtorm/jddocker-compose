@@ -1,0 +1,16 @@
+version: '3.3'
+services:
+    linuxserver:
+        container_name: jackett
+        environment:
+            - PUID=1000
+            - PGID=1000
+            - TZ=Australia/Melbourne
+            - AUTO_UPDATE=true
+        ports:
+            - '9117:9117'
+        volumes:
+            - '/mnt/containerstore/jackett/config:/config'
+            - '/mnt/public/torrents/autoget:/downloads'
+        restart: unless-stopped
+        image: 'lscr.io/linuxserver/jackett:latest'

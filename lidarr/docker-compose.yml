@@ -9,7 +9,7 @@ services:
       - PGID=1000
       - TZ=Australia/Melbourne
     volumes:
-      - /mnt/containerstore/lidarr/config:/config
+      - /mnt/containerconfig/lidarr/config:/config
       - /mnt/public/music:/music
       - /mnt/public/torrents:/downloads
     ports:

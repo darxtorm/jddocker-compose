@@ -13,6 +13,6 @@ services:
             - '/mnt/public/movies:/movies'
             - '/mnt/public/movies_spicy:/movies_spicy'
             - '/mnt/public/tv:/tv'
-            - '/mnt/public:/media'            
+            - '/mnt/public:/media'
         restart: unless-stopped
         image: 'lscr.io/linuxserver/bazarr:latest'

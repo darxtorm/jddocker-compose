@@ -14,9 +14,8 @@ services:
         volumes:
             - '/mnt/containerconfig/transmission/config:/config'
             - '/mnt/public/torrents:/downloads'
-            #- '/mnt/jdstorage5/torrents:/downloads'
+            - '/mnt/public:/media'
             - '/mnt/public/torrents/autoget:/watch'
-            #- '/mnt/jdstorage5/torrents/autoget:/watch'
             - '/mnt/local-lvm-slow:/local-lvm-slow'
         restart: unless-stopped
         image: 'lscr.io/linuxserver/transmission:latest'

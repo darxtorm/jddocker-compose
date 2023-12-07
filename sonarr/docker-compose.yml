@@ -11,7 +11,7 @@ services:
         volumes:
             - '/mnt/containerconfig/sonarr/config:/config'
             - '/mnt/public/tv:/tv'
+            - '/mnt/public:/media'
             - '/mnt/public/torrents:/downloads'
-            #- '/mnt/jdstorage5/torrents:/downloads'
         restart: unless-stopped
         image: 'lscr.io/linuxserver/sonarr:latest'

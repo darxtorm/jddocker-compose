@@ -17,5 +17,6 @@ services:
             - '/mnt/public:/media'
             - '/mnt/public/torrents/autoget:/watch'
             - '/mnt/local-lvm-slow:/local-lvm-slow'
+            - '/mnt/local-lvm-thin:/local-lvm-thin'
         restart: unless-stopped
         image: 'lscr.io/linuxserver/transmission:latest'

@@ -13,9 +13,9 @@ services:
             - '51413:51413/udp'
         volumes:
             - '/mnt/containerconfig/transmission/config:/config'
-            - '/mnt/public/torrents:/downloads'
-            - '/mnt/public:/media'
-            - '/mnt/public/torrents/autoget:/watch'
+            #- '/mnt/public/torrents:/downloads'
+            - '/mnt/plexMedia:/media'
+            #- '/mnt/public/torrents/autoget:/watch'
             - '/mnt/local-lvm-slow:/local-lvm-slow'
             - '/mnt/local-lvm-thin:/local-lvm-thin'
         restart: unless-stopped

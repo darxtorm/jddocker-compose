@@ -14,6 +14,6 @@ services:
             #- '/mnt/public:/media'
             - '/mnt/plexMedia:/media'
             #- '/mnt/public/movies_spicy:/movies_spicy'
-            - '/mnt/public/torrents:/downloads'
+            #- '/mnt/public/torrents:/downloads'
         restart: unless-stopped
         image: 'lscr.io/linuxserver/radarr:latest'

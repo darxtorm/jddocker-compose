@@ -10,9 +10,9 @@ services:
             - '6767:6767'
         volumes:
             - '/mnt/containerconfig/bazarr/config:/config'
-            - '/mnt/public/movies:/movies'
-            - '/mnt/public/movies_spicy:/movies_spicy'
-            - '/mnt/public/tv:/tv'
-            - '/mnt/public:/media'
+            - '/mnt/plexMedia/movies:/movies'
+            - '/mnt/plexMedia/movies_spicy:/movies_spicy'
+            - '/mnt/plexMedia/tv:/tv'
+            - '/mnt/plexMedia:/media'
         restart: unless-stopped
         image: 'lscr.io/linuxserver/bazarr:latest'

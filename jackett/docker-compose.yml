@@ -11,6 +11,6 @@ services:
             - '9117:9117'
         volumes:
             - '/mnt/containerconfig/jackett/config:/config'
-            - '/mnt/public/torrents/autoget:/downloads'
+            - '/mnt/plexMedia/torrents/autoget:/downloads'
         restart: unless-stopped
         image: 'lscr.io/linuxserver/jackett:latest'
